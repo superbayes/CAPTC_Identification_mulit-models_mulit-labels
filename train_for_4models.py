@@ -137,8 +137,8 @@ def create_accuracy(logit1, logit2, logit3, logit4, labels):
         accuracy = tf.reduce_mean(tf.cast(correct, tf.float32))
     return accuracy
 
-def train(model_save_path='./model_of_4/model',
-          log_path='./model_of_4/log_dir',
+def train(model_save_path='./models/model',
+          log_path='./models/log_dir',
           trainData_dir='./source_data/train',
           validData_dir='./source_data/valid',
           label_num=4,
